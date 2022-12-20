@@ -1,0 +1,340 @@
+/* Utilities */
+
+/* import font style from google font */
+@import url("https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Yesteryear&display=swap");
+
+/* set root elements so only need to change once */
+:root {
+  --primary-color: #222;
+  --secondary-color: #af7f1f;
+  --dark-background: #000;
+}
+
+/* reset all padding and margin for browsers */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* set standard fonts etc for the entire document */
+html {
+  line-height: 1.4;
+  font-size: 1.5rem;
+  font-family: "Diplomata";
+  scroll-behavior: smooth;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* use a container on divs that you do not want to start at left and strecth full screen */
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* remove bullet points from list items */
+ul {
+  list-style: none;
+}
+/* set all images to be the full size of their respective div */
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* alternating light and dark backgrounds */
+
+.bg-dark {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bg-light {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+/* link styles */
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* heading styles */
+
+h2 span {
+  display: inline;
+  color: var(--secondary-color);
+}
+/* grid layouts */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* Navbar and overlay sections */
+
+.main-nav {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  height: 15vh;
+  padding: 2rem;
+  margin: 0 2rem;
+  border: 3px solid var(--secondary-color);
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+}
+
+.main-nav a:hover {
+  border-top: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+.main-nav .social a:hover {
+  border-top: none;
+  border-bottom: none;
+  color: var(--secondary-color);
+}
+
+.main-nav h1 {
+  font-family: "Diplomata";
+}
+span {
+  display: none;
+}
+
+.sidenav a,
+.side-social a {
+  display: none;
+}
+
+.overlay {
+  background-image: url(https://images.pexels.com/photos/1319459/pexels-photo-1319459.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 85vh;
+}
+
+.overlay:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.overlay * {
+  z-index: 1;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+}
+
+.overlay-content #logo {
+  height: 300px;
+  width: 300px;
+}
+
+.overlay-content h3 {
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.overlay-content p {
+  padding-top: 1.5rem;
+}
+
+
+
+/* about section */
+
+.about {
+  margin-top: 1rem;
+}
+
+.about h3 {
+  padding-bottom: 1rem;
+}
+
+/* services section */
+
+#services-heading {
+  text-align: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+#services-1 ul {
+  display: flex;
+  justify-content: center;
+  background-color: var(--dark-background);
+  color: #fff;
+  height: 15vh;
+}
+
+#services-1 li {
+  padding: 1rem;
+  margin: auto 0;
+}
+
+#services-2 {
+  display: flex;
+}
+#services-2 img {
+  height: 400px;
+}
+
+#services-2 > *:nth-child(3) {
+  height: 450px;
+  margin: -1rem;
+  z-index: 3;
+}
+
+#services-3 {
+  display: flex;
+}
+
+.card img {
+  height: 300px;
+}
+
+.card {
+  background-color: var(--dark-background);
+  color: #fff;
+  margin: 10px;
+  width: 400px;
+}
+
+.card p {
+  padding: 1rem;
+}
+
+/* Price section */
+
+.price-overlay {
+  background-image: url(https://media.istockphoto.com/id/963423992/photo/barbershop-chair-and-blurred-background.jpg?b=1&s=170667a&w=0&k=20&c=C5RgYjWfRr1VR9aMfhTRr-6fa20_f603ZeqaEFQk3Us=);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 75vh;
+}
+
+.price-overlay:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.price-overlay * {
+  z-index: 1;
+}
+
+.price-overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+}
+
+.price-overlay-content h2 {
+  margin-bottom: 1rem;
+}
+
+.price-overlay-content p {
+  margin-top: 1rem;
+}
+
+/* contact-info section */
+
+.contact-info {
+  height: 25vh;
+  background-color: var(--dark-background);
+}
+
+/* create space between social icons */
+.contact-info a {
+  padding: 1rem;
+}
+
+.contact-info .bg-light {
+  height: 25vh;
+  padding-top: 3rem;
+}
+
+/* footer section */
+
+.footer {
+  background-color: var(--dark-background);
+}
+
+.footer p {
+  display: inline-block;
+}
+
+.footer img {
+  height: 350px;
+  width: 350px;
+}
+
+.footer li a:hover {
+  color: var(--secondary-color);
+}

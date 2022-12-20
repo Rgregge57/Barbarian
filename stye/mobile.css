@@ -1,0 +1,220 @@
+@media screen and (max-width: 1080px) {
+  :root {
+    --primary-color: #222;
+    --secondary-color: #af7f1f;
+    --dark-background: #000;
+  }
+
+  html {
+    font-size: 1.2rem;
+  }
+  /* The side navigation menu */
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sidenav #social {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    width: 750px;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  span {
+    display: inline;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  span:hover {
+    color: var(--secondary-color);
+  }
+
+  .sidenav {
+    justify-items: center;
+  }
+
+  .sidenav a:hover {
+    color: var(--secondary-color);
+    border-top: none;
+    border-bottom: none;
+  }
+  .sidenav .closebtn {
+    justify-items: end;
+  }
+  .main-nav ul {
+    display: none;
+  }
+
+  /* services section */
+  #services-2 > *:nth-child(1),
+  #services-2 > *:nth-child(4) {
+    display: none;
+  }
+
+  /* contact info section */
+  .contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 30vh;
+  }
+  .contact-info .bg-light {
+    height: 15vh;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+/* end of max 1080px */
+
+@media screen and (max-width: 438px) {
+  .main-nav h1,
+  .main-nav span {
+    font-size: 1rem;
+  }
+
+  .overlay-content #logo {
+    height: 250px;
+    width: 250px;
+  }
+
+  .container {
+    width: 390px;
+  }
+
+  #services-1 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dark-background);
+    color: #fff;
+    height: 35vh;
+  }
+  #services-1 li {
+    margin: auto;
+    padding: 0.3rem;
+  }
+
+  #services-2,
+  #services-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  #services-2 > *:nth-child(3) {
+    height: 400px;
+    margin: 0;
+  }
+
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 60vh;
+  }
+
+  .contact-info > div {
+    padding: 1rem;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem 0;
+  }
+
+  .footer img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+/* end of mobile devices max width 438px */
+
+/* iphone se and small devices */
+@media screen and (max-height: 812px) {
+  html {
+    font-size: 0.9rem;
+  }
+
+  h2 span {
+    display: block;
+  }
+}
+
+/* landscape view */
+@media screen and (max-height: 428px) {
+  html {
+    font-size: 0.9rem;
+  }
+
+  .sidenav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .overlay {
+    height: 120vh;
+  }
+
+  .main-nav {
+    height: 20vh;
+  }
+
+  #services-3 .card {
+    width: 30%;
+    height: 450px;
+  }
+
+  .price-overlay {
+    height: auto;
+  }
+
+  .contact-info {
+    height: auto;
+  }
+
+  .contact-info .bg-light {
+    height: auto;
+  }
+
+  .bg-light i {
+    padding-bottom: 1.5rem;
+  }
+}
