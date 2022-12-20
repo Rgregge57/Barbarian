@@ -197,8 +197,7 @@
     height: 20vh;
   }
 
-  #services-2,
-  #services-3 {
+  #services-2 {
     display: flex;
     flex-direction: column;
   }
