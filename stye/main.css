@@ -338,3 +338,13 @@ span {
 .footer li a:hover {
   color: var(--secondary-color);
 }
+
+
+/* privacy and cookies */
+
+.privacy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
