@@ -307,7 +307,7 @@ span {
 
 .contact-info {
   height: 25vh;
-  background-color: var(--dark-background);
+  background-color: #333;
 }
 
 /* create space between social icons */
