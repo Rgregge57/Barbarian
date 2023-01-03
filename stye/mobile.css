@@ -159,6 +159,11 @@
     padding: 2rem 0;
   }
 
+  .footer #year{
+   margin: 0;
+   padding: 0;
+  }
+
   .footer img {
     height: 150px;
     width: 150px;
