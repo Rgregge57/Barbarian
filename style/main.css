@@ -130,19 +130,16 @@ h2 span {
 }
 
 .main-nav a:hover {
-  border-top: 2px solid var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
 }
 .main-nav .social a:hover {
-  border-top: none;
-  border-bottom: none;
   color: var(--secondary-color);
 }
 
 .main-nav h1 {
   font-family: "Diplomata";
 }
-span {
+.menu {
   display: none;
 }
 
@@ -307,7 +304,7 @@ span {
 
 .contact-info {
   height: 25vh;
-  background-color: #333;
+  background-color: var(--primary-color);
 }
 
 /* create space between social icons */

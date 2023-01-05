@@ -54,26 +54,17 @@
     margin-left: 50px;
   }
 
-  span {
+  .menu {
     display: inline;
     color: #fff;
     cursor: pointer;
     font-size: 2rem;
   }
 
-  span:hover {
-    color: var(--secondary-color);
-  }
-
   .sidenav {
     justify-items: center;
   }
 
-  .sidenav a:hover {
-    color: var(--secondary-color);
-    border-top: none;
-    border-bottom: none;
-  }
   .sidenav .closebtn {
     justify-items: end;
   }
